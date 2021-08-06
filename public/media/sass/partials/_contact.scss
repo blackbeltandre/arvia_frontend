@@ -1,0 +1,441 @@
+/*====================================================
+    contact-form-action
+ ====================================================*/
+.contact-form-action {
+  .send-file {
+    background-color: $color-light;
+    border: 1px solid rgba(128, 137, 150, 0.2);
+    color: $theme-color-4;
+    cursor: pointer;
+    outline: none;
+    &:after {
+      display: none;
+    }
+  }
+  .form-group {
+    position: relative;
+    .form-icon {
+      position: absolute;
+      top: 18px;
+      left: 16px;
+      color: $theme-color-4;
+      font-size: $display-24;
+    }
+    .send-emoji {
+      background-color: $color-light;
+      border: 1px solid rgba(128, 137, 150, 0.2);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: $display-20;
+      top: 10px;
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+    .submit-btn {
+      position: absolute;
+      top: 50%;
+      @include transform(translateY(-50%));
+      right: 8px;
+      padding-right: 10px;
+      padding-left: 10px;
+      background-color: transparent;
+      border: none;
+      color: $theme-color-4;
+      font-size: $display-24;
+    }
+  }
+  .label-text {
+    font-size: $default-font-4;
+    color: $theme-color;
+    font-weight: $font-weight-medium;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .form-control {
+    height: auto;
+    line-height: inherit;
+    padding: 15px 20px 15px 40px;
+    font-size: $default-font-4;
+    color: $theme-color;
+    border: 1px solid rgba(128, 137, 150, 0.3);
+    resize: none;
+    font-weight: $font-weight-medium;
+    @include transition(0.3s);
+    @include border-radius(4px);
+    &:focus {
+      border-color: $theme-color-2;
+      @include box-shadow(0 0 0 0);
+    }
+    &::placeholder {
+      color: $theme-color-4;
+    }
+    &:-ms-input-placeholder {
+      color: $theme-color-4;
+    }
+    &::-ms-input-placeholder {
+      color: $theme-color-4;
+    }
+  }
+  .date-range {
+    color: $theme-color-4;
+  }
+  .message-control {
+    height: 160px;
+  }
+}
+
+/*====================================================
+    billing-form-item
+ ====================================================*/
+.billing-form-item {
+  border: 1px solid rgba(128, 137, 150, 0.2);
+  @include border-radius(4px);
+  margin-bottom: 30px;
+  background-color: $color-light;
+  @include box-shadow(0 0 18px 0 rgba(0,0,0,.01));
+}
+.billing-title-wrap {
+  padding: 30px;
+  border-bottom: 1px solid rgba(128, 137, 150, 0.2);
+}
+.billing-content {
+  padding: 24px 30px 30px 30px;
+  .contact-form-action {
+    .form-control {
+      @include box-shadow(0 0 0 0);
+    }
+    .form-group {
+      margin-bottom: 20px;
+      .label-text {
+        font-weight: $font-weight-semi-bold;
+        margin-bottom: 7px;
+      }
+    }
+    .time-label-group {
+      margin-bottom: 10px;
+      .label-text {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .custom-checkbox {
+    display: inline-block;
+    margin-right: 20px;
+    @media #{$small_mobile_three} {
+      margin-right: 0;
+      display: block;
+    }
+  }
+}
+.presentation-box {
+  .icon-element {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-right: 5px;
+    font-size: $display-25;
+  }
+}
+/*====================================================
+    radio-option
+ ====================================================*/
+.radio-option {
+  .radio-trigger {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: $default-font;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: $font-weight-medium;
+    color: $theme-color;
+    input[type=radio] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark {
+        border-color: $theme-color-2;
+        &:after {
+          @include transform(scale(1));
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:checked ~ .payment-active {
+       display: block;
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 19px;
+      height: 19px;
+      border: 2px solid $color-2;
+      @include border-radius(50%);
+      @include transition(0.3s);
+      &:after {
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: $theme-color-2;
+        opacity: 0;
+        visibility: hidden;
+        @include transform(scale(0.1));
+        @include border-radius(50%);
+        @include transition(0.3s);
+      }
+    }
+    .badge-before {
+      @media #{$small_mobile_four} {
+        margin-left: 0 !important;
+        margin-top: 7px;
+      }
+    }
+    .badge {
+      @media #{$small_mobile_two} {
+        margin-left: 0 !important;
+        margin-top: 6px;
+      }
+    }
+  }
+  .payment-active {
+    display: none;
+  }
+  .payment-content {
+    .contact-form-action {
+      .row {
+        @media #{$small_mobile_two} {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.payment-option {
+  .card-icon {
+    @media #{$small_mobile_two} {
+      float: none !important;
+    }
+  }
+}
+
+/*====================================================
+   booking-confirm-area
+ ====================================================*/
+.booking-confirm-area {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 25px;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/dots.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    @include border-radius(50%);
+    z-index: -1;
+    @media #{$small_mobile} {
+      display: none;
+    }
+  }
+  &:after {
+    left: auto;
+    bottom: auto;
+    top: 80px;
+    right: 25px;
+  }
+}
+
+.confirm-icon {
+  .icon-element {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: $display-13;
+  }
+}
+.confirm-page {
+  .badge {
+    white-space: inherit;
+  }
+}
+/*====================================================
+    invoice-area
+ ====================================================*/
+.invoice-area {
+  .btn-box {
+    .theme-btn {
+      @media #{$small_mobile_two} {
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 45px;
+      }
+      &:nth-child(2) {
+        @media #{$small_mobile_five} {
+          margin-left: 0 !important;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+.invoice-content {
+  @include border-radius(4px);
+  background-color: $color-light;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.05));
+  padding: 34px 40px 40px 40px;
+  border: 1px solid rgba(128, 137, 150, 0.1);
+}
+.invoice-info {
+  margin-bottom: 20px;
+}
+.invoice-item {
+  .invoice-logo {
+    @media #{$large_mobile} {
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    @media #{$small_mobile} {
+      padding-bottom: 30px;
+      text-align: center;
+    }
+  }
+  .invoice-title {
+    .widget-title {
+      font-size: $display-14;
+    }
+  }
+  .list-items {
+    li {
+      margin-bottom: 2px;
+    }
+  }
+  .list-items.text-right {
+    @media #{$small_mobile_four} {
+      text-align: left !important;
+    }
+  }
+}
+
+.invoice-table {
+  table {
+    tr {
+      th {
+        color: $theme-color;
+        font-weight: $font-weight-semi-bold;
+        border-bottom-width: 1px;
+      }
+      th,
+      td {
+        font-size: $default-font;
+        padding: 10px 20px;
+      }
+      td {
+        font-size: $default-font-2;
+      }
+    }
+  }
+  .invoice-table-two {
+    margin-bottom: 0;
+    tr {
+      th,
+      td {
+        border-top: none;
+        padding: 5px 0 5px 0;
+      }
+      td {
+        text-align: right;
+      }
+    }
+  }
+}
+
+/*====================================================
+    account-assist
+ ====================================================*/
+.account-assist {
+  .account__desc {
+    position: relative;
+    font-size: $display-23;
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 50%;
+      width: 45%;
+      height: 1px;
+      background-color: rgba(128, 137, 150, 0.2);
+     @include transform(translateY(-50%));
+    }
+    &:after {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+.user-action-form {
+  background-color: $color-light;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  @include border-radius(12px);
+  .billing-form-item {
+    @include box-shadow(0 0 0 0);
+    border: none;
+    @include border-radius(0);
+    background-color: transparent;
+  }
+  .billing-title-wrap {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+  .billing-content {
+    padding-top: 48px;
+  }
+}
+
+.contact-details {
+  background-image: url('../images/contact-bg.jpg');
+  @include border-radius(4px);
+  padding: 35px 40px 35px 40px;
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(44,44,81,0.9);
+    @include border-radius(4px);
+  }
+}
+.contact-details-inner {
+  .contact-item {
+   &:last-child {
+     margin-bottom: 0;
+   }
+  }
+}
+.contact-item {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,86 @@
+.upload-btn-box {
+  .jFiler-input {
+    width: 170px;
+    border: none;
+    background-color: transparent;
+    height: auto;
+    font-size: $default-font-3;
+    color: $theme-color-4;
+    font-weight: $font-weight-medium;
+    .jFiler-input-caption {
+      display: none;
+    }
+    .jFiler-input-button {
+      float: none;
+      padding: 10px 0;
+      position: relative;
+      color: $color-light-grey;
+      &:after {
+        position: absolute;
+        content: 'Upload a Photo';
+        top: 0;
+        left: 0;
+        padding-top: 10px;
+        color: $theme-color-4;
+        width: 100%;
+        height: 100%;
+        padding-left: 30px;
+      }
+      &:before {
+        position: absolute;
+        content: "\f03e";
+        top: 10px;
+        left: 20px;
+        font-family: "FontAwesome";
+        color: $theme-color-4;
+        font-size: $display-24;
+      }
+    }
+  }
+}
+.cover-photo-wrap {
+  .jFiler-input {
+    .jFiler-input-button {
+      &:after {
+        content: 'Browse Cover';
+      }
+    }
+  }
+}
+
+.cv-profile-action-wrap {
+  .jFiler-input {
+    width: 130px;
+    .jFiler-input-button {
+      border-color: rgba(128, 137, 150, 0.4);
+      &:hover {
+        border-color: rgba(128, 137, 150, 0.7);
+      }
+      &:before {
+        display: none;
+      }
+      &:after {
+        padding-left: 0;
+        content: 'Upload CV';
+      }
+    }
+  }
+}
+.company-logo-wrap {
+  .upload-btn-box {
+    .jFiler-input {
+      width: 100%;
+      margin-bottom: 0;
+      .jFiler-input-button {
+        padding: 15px;
+        &:before {
+          top: 17px;
+        }
+        &:after {
+          padding-top: 16px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

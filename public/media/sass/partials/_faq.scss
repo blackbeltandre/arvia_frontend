@@ -1,0 +1,88 @@
+/*====================================================
+    faq area
+ ====================================================*/
+.accordion-item {
+  .card:not(:last-of-type),
+  .card:not(:first-of-type){
+    @include border-radius(4px);
+  }
+  .card {
+    @include border-radius(4px);
+    background-color: $color-light;
+    @include box-shadow(0 0 40px 0 rgba(0,0,0,0.07));
+    border: none;
+    margin-bottom: 15px;
+    .btn {
+      width: 100%;
+      text-align: left;
+      color: $theme-color;
+      font-size: $display-24;
+      font-weight: $font-weight-medium;
+      text-decoration: none;
+      padding: 14px 20px 14px 40px;
+      position: relative;
+      @media #{$small_mobile_five} {
+        font-size: $default-font;
+      }
+      i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        @include border-radius(50%);
+        border: 1px solid rgba(128, 137, 150, 0.2);
+        color: $theme-color;
+        text-align: center;
+        font-size: $default-font;
+        display: none;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        @include transform(translateY(-50%));
+        left: 14px;
+        width: 12px;
+        height: 12px;
+        background-color: rgba(128, 137, 150, 0.3);
+        @include border-radius(50%);
+        @include transition(0.3s);
+      }
+    }
+    .btn[aria-expanded=false] i.la.la-plus {
+      display: block;
+    }
+    .btn[aria-expanded=true] i.la.la-minus {
+      display: block;
+    }
+    .btn[aria-expanded=true]:after{
+      background-color: $theme-color-2;
+    }
+    .card-header {
+      padding: 0;
+      background-color: $color-light;
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .card-body {
+      padding: 0 30px 25px 30px;
+    }
+  }
+}
+.faq-area {
+  .accordion-item {
+    @media #{$tab_device} {
+      margin-bottom: 40px;
+      padding-right: 0 !important;
+    }
+    @media #{$large_mobile} {
+      margin-bottom: 40px;
+      padding-right: 0 !important;
+    }
+    @media #{$small_mobile} {
+      margin-bottom: 40px;
+      padding-right: 0 !important;
+    }
+  }
+}

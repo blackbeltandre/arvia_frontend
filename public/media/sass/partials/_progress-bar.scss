@@ -1,0 +1,57 @@
+/*-===============================
+    PROGRESS BAR AREA 4
+===============================-*/
+.circlechart {
+    margin-bottom: 30px;
+   @media #{$tab_device} {
+    text-align: center;
+   }
+  @media #{$large_mobile} {
+    text-align: center;
+   }
+  @media #{$small_mobile} {
+    text-align: center;
+   }
+}
+.circlechart-bg2 {
+  .success-stroke {
+    stroke: $color-3;
+  }
+}
+.circlechart-bg3 {
+  .success-stroke {
+    stroke: $color-4;
+  }
+}
+.circlechart-bg4 {
+  .success-stroke {
+    stroke: $color-5;
+  }
+}
+.skillbar-wrap {
+  background-color: $color-light-grey;
+  padding: 20px;
+  p {
+    font-size: $default-font-2;
+    line-height: 24px;
+  }
+}
+.skillbar {
+  margin-bottom: 10px;
+  background-color: rgba(44, 44, 81, 0.1);
+  @include border-radius(30px);
+}
+.skill-item {
+  background-color: $theme-color-2;
+  @include border-radius(30px);
+  width: 0;
+  height: 20px;
+  line-height: 19px;
+  color: $color-light;
+  text-align: right;
+  padding-right: 10px;
+  span {
+    font-size: $default-font-3;
+    font-weight: $font-weight-semi-bold;
+  }
+}

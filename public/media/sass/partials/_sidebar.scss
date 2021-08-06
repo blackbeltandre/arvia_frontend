@@ -1,0 +1,126 @@
+/*====================================================
+   sidebar
+ ====================================================*/
+.author-verified-badge {
+  .author__verified-badge {
+    background-color: $theme-color-5;
+    color: $color-light;
+    @include border-radius(4px);
+    font-size: $default-font;
+    font-weight: $font-weight-medium;
+    text-align: center;
+    padding: 15px 0;
+    cursor: help;
+    span {
+      font-size: $display-4;
+    }
+  }
+}
+/*====== sidebar =====*/
+.sidebar {
+  @media #{$tab_device} {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    -ms-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  @media #{$large_mobile} {
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+  @media #{$small_mobile} {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .billing-form-item {
+    margin-bottom: 0;
+  }
+  .billing-content {
+    .custom-checkbox {
+      margin-right: 0;
+    }
+    ul {
+      li {
+        &:last-child {
+          .radio-trigger,
+          .custom-checkbox {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .sidebar-widget {
+    margin-bottom: 30px;
+    @media #{$tab_device} {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .gmaps {
+      #map {
+        height: 300px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.recent-item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: 1px solid rgba(44, 44, 81, 0.1);
+  padding-bottom: 16px;
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .recent-img {
+    margin-right: 13px;
+    @include border-radius(50%);
+    img {
+      width: 90px;
+      height: 90px;
+      @include border-radius(50%);
+    }
+  }
+  .recent-post-body {
+    .recent__meta {
+      font-size: $default-font-4;
+    }
+    a {
+      color: $theme-color;
+      @include transition(0.3s);
+      &:hover {
+        color: $theme-color-2;
+      }
+    }
+    .recent__link {
+      font-size: $default-font-2;
+      color: $theme-color;
+      font-weight: $font-weight-medium;
+      line-height: 20px;
+      margin-bottom: 2px;
+      @include transition(0.3s);
+      &:hover {
+        color: $theme-color-2;
+      }
+    }
+  }
+}
+.popular-job-widget {
+  .billing-content {
+    @media #{$laptop_m_five} {
+      padding-bottom: 27px;
+    }
+  }
+}

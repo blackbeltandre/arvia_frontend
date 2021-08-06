@@ -1,0 +1,49 @@
+/*-===============================
+    CHART AREA
+===============================-*/
+.chart-box {
+  background-color: $color-light;
+  padding: 30px 30px 30px 25px;
+  overflow: hidden;
+  @include border-radius(4px);
+  @include box-shadow(0 0 18px 0 rgba(44,44,81,0.1));
+  @media #{$laptop_m_four} {
+    margin-bottom: 30px;
+  }
+  .chart-title {
+    font-size: $display-12;
+    font-weight: $font-weight-semi-bold;
+    margin-bottom: 30px;
+  }
+}
+
+/*===== chart-legend ======*/
+.chart-legend {
+  ul {
+    li {
+      display: inline-block;
+      text-transform: capitalize;
+      position: relative;
+      color: $theme-color;
+      margin-left: 28px;
+    }
+  }
+}
+
+.legend__item {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-color: $theme-color-2;
+  @include border-radius(50%);
+  position: absolute;
+  left: -22px;
+  top: 6px;
+}
+
+.legend__bg-1 {
+  background-color: $color-6;
+}
+.legend__bg-2 {
+  background-color: $alter-color-2;
+}

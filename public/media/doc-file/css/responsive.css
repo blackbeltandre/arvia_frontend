@@ -1,0 +1,469 @@
+
+@media (min-width: 1411px) and (max-width: 1920px) {
+    .container-middle {
+        width: 1392px;
+    }
+    .main-menu ul {
+        padding-right: 0px;
+    }
+}
+@media (min-width: 1440px) {
+
+}
+@media (min-width: 320px) and (max-width: 1410px) {
+    .container-middle {
+        width: 1170px;
+    }
+    .main-menu ul {
+        padding-right: 0px;
+    }
+}
+@media (max-width: 1366px) {
+   .banner-text h1 {
+       font-size: 46px;
+       line-height: 65px;
+   }
+    .hero-demo-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 991px){
+    .agency-bottom-feature-item {
+        text-align: center;
+    }
+    .copyright-area h4 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .copyright-area,
+    .copyright-area .copy-desc.text-right {
+        text-align: center;
+    }
+    .purchase-title p{
+        width: auto;
+    }
+    .feature-area .feature-item {
+        margin-bottom: 30px;
+    }
+    .feature-area .feature-item-active {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        background-color: #fff;
+    }
+    .feature-area .feature-item-active span{
+        color: #ff7e00 !important;
+    }
+    .feature-area .feature-item-active .feature__title {
+        color: #1e1666 !important;
+    }
+    .feature-area .feature-item-active .feature__desc {
+        color: rgba(109,122,140,0.9) !important;
+    }
+}
+
+@media  (min-width: 992px) and (max-width: 1365px){
+    .demo-page-area-1 .preview-outer a img,
+    .demo-page-area-2 .preview-outer a img {
+        width: 100%;
+        height: auto;
+    }
+}/*-- end 1365px ---*/
+
+@media (max-width: 1199px) {
+    .header-area {
+        padding: 15px 0;
+    }
+    .menu-trigger {
+        display: block;
+        right: 15px;
+        top: 10px;
+    }
+    .logo {
+        padding-top: 0px;
+    }
+    /*--- all-demo-content a.demo-link .demo-1 ----*/
+    .main-menu ul,
+    .hero-demo-img img {
+        display: none;
+    }
+    .hero-area {
+        padding: 230px 0px 200px 0px;
+    }
+    .hero-area .col-100 {
+        width: 100%;
+    }
+    .agency-bottom-feature-item h4:before,
+    .agency-bottom-feature-item h4:after {
+        display: none;
+    }
+    .link-btn-box {
+        padding-top: 80px;
+    }
+}/*-- end 1199px --*/
+
+@media (max-width: 1024px) {
+    /*--- preview-overlay---*/
+    .preview-overlay {
+        padding: 110px 0px 0px 0px;
+    }
+    .preview-outer:hover .preview-overlay {
+        padding: 110px 0px 0px 28px;
+    }
+}
+/*-- end 1024px --*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container-middle {
+        width: 970px;
+    }
+}/*-- end 992px --*/
+
+/*-- end 1024px --*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .theme-panel {
+        display: none;
+    }
+    .container-middle {
+        width: 750px;
+    }
+    .menu-trigger {
+        top: -25px;
+    }
+    .demo-text-area {
+        margin-bottom: 50px;
+    }
+    .check-out-heading .heading-paragraph,
+    .featured-title p{
+        width: 75%;
+    }
+    .tab-filters li a {
+        margin: 0px 2px 10px 2px;
+    }
+    .check-out-heading-2 {
+        margin-bottom: 50px;
+    }
+    .check-out-heading-2 .heading-paragraph {
+        margin: inherit;
+    }
+    .estage-support-heading {
+        width: auto;
+    }
+}/*-- end 992px --*/
+
+/*-- end 1024px --*/
+@media (max-width: 768px) {
+    .single-tab-content a img {
+        height: auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .container-middle {
+        width: 580px;
+    }
+    .menu-trigger {
+        top: -30px;
+    }
+    .demo-text-area {
+        margin-bottom: 50px;
+    }
+    .check-out-heading .heading-paragraph,
+    .featured-title p{
+        width: 75%;
+    }
+    .tab-filters li a {
+        margin: 0px 2px 10px 2px;
+    }
+    .tab-img-box {
+        height: 375px;
+    }
+    .single-tab-content {
+        height: 480px;
+    }
+    .check-out-heading-2 {
+        margin-bottom: 50px;
+    }
+    .check-out-heading-2 .heading-paragraph {
+        margin: inherit;
+    }
+    .estage-support-heading {
+        width: auto;
+    }
+    .section-text-overlay {
+        padding-top: 0;
+    }
+}/*-- end 992px --*/
+
+@media (min-width: 320px) and (max-width: 599px) {
+    .theme-panel {
+        display: none;
+    }
+    .container-middle {
+        width: auto;
+    }
+    .menu-trigger {
+        top: -30px;
+    }
+    .demo-text-area {
+        margin-bottom: 50px;
+    }
+    .check-out-heading .heading-paragraph,
+    .featured-title p{
+        width: 100%;
+    }
+    .purchase-title p{
+        width: auto;
+    }
+    .tab-filters li a {
+        margin: 0px 2px 10px 2px;
+    }
+    .check-out-heading-2 {
+        margin-bottom: 50px;
+    }
+    .check-out-heading-2 .heading-paragraph {
+        margin: inherit;
+    }
+    .estage-support-heading {
+        width: auto;
+    }
+    .hero-area {
+        text-align: center;
+    }
+    .hero-video-btn {
+        right: 32%;
+        width: 35%;
+        top: 100%;
+    }
+    .section-text-overlay {
+        padding-top: 0;
+    }
+}/*-- end 992px --*/
+
+
+@media (max-width: 768px) {
+    /*--- demo-heading---*/
+    .demo-heading p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .demo-heading h1 {
+        font-size: 38px;
+        color: #f1f1f1;
+        margin-bottom: 60px;
+        font-weight: 600;
+    }
+    .demo-heading a.explore-demo-btn,
+    .demo-heading a.explore-demo-btn-2,
+    .agency-purchase-btn,
+    .agency-support-btn {
+        font-size: 14px;
+    }
+
+}/*--- end 768px ---*/
+
+@media (max-width: 767px) {
+    /*---- navbar-toggle ----*/
+    .hero-area-text-text .navbar-header a img {
+        margin-left: 0px;
+    }
+    /*---- demo-area ---*/
+    .demo-heading {
+        margin-left: 20px;
+    }
+    /*---- demo-page-area-1 preview-outer ------*/
+    .demo-page-area-1 .preview-outer .preview-overlay {
+        padding: 450px 0px 0px 0px;
+    }
+    .demo-page-area-1 .preview-outer:hover .preview-overlay {
+        padding: 450px 0px 0px 265px;
+    }
+    .preview-overlay a.demo-link {
+        font-size: 25px;
+    }
+    /*---- demo-margin-0px -----*/
+    .demo-2-margin-50px {
+        margin-bottom: 50px;
+    }
+    .demo-page-area-2 .preview-outer a img {
+        height: auto;
+    }
+    /*---- demo-page-area-2 preview-outer -----*/
+    .demo-page-area-2 .preview-outer .preview-overlay {
+        padding: 370px 0px 0px 0px;
+    }
+    .demo-page-area-2 .preview-outer:hover .preview-overlay {
+        padding: 370px 0px 0px 250px;
+    }
+    /*---- agency-bottom-feature-item  -----*/
+    .agency-bottom-feature-item {
+        padding: 32px 0px 32px 0px;
+    }
+    .demo-2-margin-bottom-100px {
+        margin-bottom: 100px;
+    }
+    /*----- agency-feature-area -----*/
+    .agency-feature-area .demo-margin-50px {
+        margin-bottom: 0px;
+    }
+    .check-out-heading ul li {
+        padding: 17px 0px;
+        display: block;
+    }
+    .check-out-heading ul li img {
+        width: auto;
+    }
+}/*---- end 767px ----*/
+
+@media (max-width: 600px) {
+    .all-demo-content a.demo-link .demo-1 {
+        height: 500px;
+    }
+}/*---- end 600px ----*/
+
+@media (max-width: 515px) {
+    .demo-heading {
+         margin-left: 0px;
+    }
+}/*---- end 515px ----*/
+
+@media (max-width: 480px) {
+    /*---- demo-area ---*/
+    .demo-area {
+        text-align: center;
+    }
+    .demo-heading {
+        margin-left: 0px;
+    }
+    /*---- demo-page-heading -----*/
+    .demo-page-heading h2,
+    .agency-feature-heading h2,
+    .agency-support-heading h2 {
+        font-size: 30px;
+    }
+    .demo-page-heading p,
+    .agency-feature-heading p,
+    .agency-purchase-heading p,
+    .agency-support-heading p {
+        font-size: 15px;
+    }
+    .button-div a {
+        display: block;
+    }
+    .demo-heading a.explore-demo-btn,
+    .demo-heading a.explore-demo-btn-2 {
+        width: 230px;
+        margin: 0 auto;
+    }
+    /*---- demo-page-area-1 preview-outer -----*/
+    .demo-page-area-1 .preview-outer .preview-overlay {
+        padding: 250px 0px 0px 0px;
+    }
+    .demo-page-area-1 .preview-outer:hover .preview-overlay {
+        padding: 250px 0px 0px 130px;
+    }
+
+    /*---- demo-page-area-2 preview-outer -----*/
+    .demo-page-area-2 .preview-outer .preview-overlay {
+        padding: 250px 0px 0px 0px;
+    }
+    .demo-page-area-2 .preview-outer:hover .preview-overlay {
+        padding: 250px 0px 0px 125px;
+    }
+    .all-demo-content a.demo-link .demo-1 {
+        height: 365px;
+    }
+
+}/*---- end 480px ----*/
+@media (max-width: 425px) {
+    .hero-area {
+        padding: 230px 0px 140px 0px;
+    }
+    .purchase-btn {
+        margin-top: 20px;
+    }
+}/*---- end 375px ----*/
+
+@media (max-width: 375px) {
+    .agency-bottom-feature-item h4:before,
+    .agency-bottom-feature-item h4:after {
+        display: none;
+    }
+    .hero-area {
+        padding: 180px 0px 100px 0px;
+    }
+    .feature-area {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    .all-demo-area.padding-top {
+        padding-top: 80px;
+    }
+    .estage-support-heading h2,
+    .link-btn-box h2,
+    .featured-title h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .check-out-heading h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner-text .demo-btn {
+        display: block;
+        margin-right: 0;
+    }
+    .banner-text .demo-btn2 {
+        margin-top: 10px;
+    }
+
+}/*---- end 375px ----*/
+
+@media (max-width: 320px) {
+    /*---- demo-page-area-1 ------*/
+    .all-demo-content a.demo-link .demo-1 {
+        height: 250px;
+    }
+    .agency-bottom-feature-item  {
+        padding: 32px 10px 32px 10px;
+    }
+    .agency-bottom-feature-item i {
+        font-size: 35px;
+    }
+    .agency-bottom-feature-item h4 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .demo-page-heading h2,
+    .agency-feature-heading h2,
+    .agency-support-heading h2 {
+        font-size: 24px;
+    }
+    .agency-purchase-heading h2 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .agency-bottom-feature {
+        margin-bottom: 0;
+        height: 180px;
+    }
+    .copyright-area h4 {
+        font-size: 20px;
+    }
+    .login-btn {
+        margin-top: 15px;
+    }
+    .code-img {
+        height: 350px;
+    }
+    .banner-text h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner-text span {
+        line-height: 24px;
+    }
+}/*---- end 320px ----*/
+

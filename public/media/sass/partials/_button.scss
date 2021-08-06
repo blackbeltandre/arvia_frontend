@@ -1,0 +1,76 @@
+/*=== theme-btn ====*/
+.theme-btn {
+  font-weight: $font-weight-medium;
+  font-size: $default-font-3;
+  color: $color-light;
+  line-height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $theme-color-2;
+  @include transition(0.3s);
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  position: relative;
+  display: inline-block;
+  outline: none;
+  @include border-radius(4px);
+  &:hover {
+    background-color: $theme-color-3;
+    color: $color-light;
+  }
+}
+.btn-rgb {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-light {
+  background-color: rgba(38, 174, 97, 0.1) !important;
+  color: $theme-color-2 !important;
+  @include box-shadow(0 0 0 0 !important);
+  &:hover {
+    background-color: $theme-color-2 !important;
+    color: $color-light !important;
+  }
+}
+.download-btn {
+  line-height: 55px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  .la {
+    font-size: $display-20;
+    margin-right: 8px;
+  }
+  &:nth-child(2) {
+    background-color: $color-5;
+  }
+}
+.video-play-btn {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  text-align: center;
+  background-color: $theme-color-2;
+  color: $color-light;
+  font-size: $display-15;
+  @include border-radius(50%);
+  @include transition(0.3s);
+  &:hover {
+    background-color: $theme-color-3;
+    color: $color-light;
+  }
+}
+
+.button-warning {
+  background-color: $color-5 !important;
+}
+.button-info {
+  background-color: $alter-color-2 !important;
+}
+.button-success {
+  background-color: $theme-color-5 !important;
+}
+.button-danger {
+  background-color: $alter-color-3 !important;
+}

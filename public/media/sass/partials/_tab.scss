@@ -1,0 +1,170 @@
+.tab-shared {
+  .nav-tabs {
+    border-bottom: none;
+    width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $theme-color-2;
+    padding: 20px 20px 26px 20px;
+    @include border-radius(100px);
+    @media #{$small_mobile_two} {
+      width: 290px;
+      padding-bottom: 15px;
+    }
+    .nav-item {
+      margin-bottom: 0;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+        @media #{$small_mobile_two} {
+          margin-bottom: 10px;
+        }
+      }
+      @media #{$small_mobile_two} {
+       margin-bottom: 15px;
+      }
+      .nav-link {
+        border: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        span {
+          font-size: $display-4;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          bottom: -8px;
+          left: 50%;
+          @include transform(translateX(-50%));
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid transparent;
+          @include transition(0.3s);
+        }
+        &.active {
+          background-color: $color-light;
+          color: $theme-color;
+          &:after {
+            border-top-color: $color-light;
+          }
+        }
+      }
+    }
+    .theme-btn {
+      @include box-shadow(0 0 0 0);
+      line-height: 45px;
+      @include border-radius(30px);
+      background-color: rgba(255, 255,255, 0.1);
+      &:hover {
+        background-color: $color-light;
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+.tab-shared-2 {
+  .nav-tabs {
+    width: auto;
+    background-color: transparent;
+    @include border-radius(0);
+    padding: 0;
+    .nav-item {
+      @media #{$large_mobile} {
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+      @media #{$small_mobile} {
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+      .nav-link {
+        background-color: rgba(38, 174, 97, 0.1);
+        color: $theme-color-2;
+        &:hover,
+        &.active {
+          background-color: $theme-color-2;
+          color: $color-light;
+        }
+        &.active {
+          &:after {
+            border-top-color: $theme-color-2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-shared-3 {
+  .nav-tabs {
+    width: auto;
+    @include border-radius(12px 12px 0 0);
+    background-color: $color-light;
+    padding: 0;
+    border-bottom: 1px solid rgba(121, 127, 135, 0.1);
+    .nav-item {
+      width: 50%;
+      margin-right: 0;
+      position: relative;
+      &:first-child {
+        .nav-link {
+          @include border-radius(12px 0 0 0);
+        }
+        &:after {
+          position: absolute;
+          content: "Or";
+          top: 50%;
+          right: -17px;
+          width: 35px;
+          height: 35px;
+          line-height: 29px;
+          background-color: $theme-color-4;
+          color: $color-light;
+          @include border-radius(50%);
+          font-size: $default-font-3;
+          font-weight: $font-weight-semi-bold;
+          @include transform(translateY(-50%));
+          z-index: 1;
+          border: 2px solid $color-light;
+          text-align: center;
+        }
+      }
+      &:last-child {
+        .nav-link {
+          @include border-radius(0 12px 0 0);
+        }
+      }
+      .nav-link {
+        width: 100%;
+        @include border-radius( 0);
+        line-height: 60px;
+        text-align: center;
+        background-color: $color-light;
+        color: $theme-color;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        &:after {
+          display: none;
+        }
+        .la {
+          font-size: $display-24;
+          margin-right: 5px;
+        }
+        &.active {
+          background-color: rgba(44, 44, 81, 0.1);
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}
+

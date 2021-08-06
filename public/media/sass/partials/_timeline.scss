@@ -1,0 +1,174 @@
+/*======================================
+       TIMELINE AREA 2
+ ======================================*/
+.road-map {
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $theme-color;
+    opacity: .2;
+    @include transform(translateX(-50%));
+    z-index: -1;
+    @include border-radius(5px);
+    @media #{$device-481} {
+      display: none;
+    }
+  }
+}
+
+.happening {
+  &:hover {
+    .happening-period {
+      .happening__desc {
+        background-color: $theme-color-2;
+      }
+      &:before {
+        background-color: $theme-color-2;
+        border-color: $color-light;
+      }
+    }
+  }
+  &:nth-child(2n+2) {
+    .happening-period {
+      float: right;
+      text-align: left;
+      padding-top: 60px;
+      padding-right: 0;
+      padding-left: 45px;
+      @media #{$device-481} {
+        padding-left: 0;
+        float: none;
+        text-align: right;
+      }
+      &:before {
+        right: auto;
+        left: 0;
+        @include transform(translateX(-50%));
+      }
+    }
+    .happening-detail {
+      float: left;
+      text-align: right;
+      margin-top: 31px;
+      margin-bottom: 31px;
+      &:before {
+        left: auto;
+        right: -12px;
+        @include transform(rotate(-179deg));
+        @media #{$device-481} {
+          top: -18px;
+          right: 37px;
+          @include transform(rotate(90deg));
+        }
+      }
+    }
+  }
+  .happening-period {
+    width: 50%;
+    padding: 27px 42px 0 0;
+    float: left;
+    vertical-align: top;
+    text-align: right;
+    position: relative;
+    @media #{$device-481} {
+      width: 100%;
+      float: none;
+      text-align: left;
+      padding-right: 0;
+    }
+    .happening__desc {
+      font-size: $default-font-2;
+      line-height: 16px;
+      font-weight: $font-weight-medium;
+      color: $color-light;
+      display: inline-block;
+      background-color: $theme-color;
+      padding: 8px 15px;
+      @include border-radius(30px);
+      @include transition(0.3s);
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      border: 3px solid $color-light;
+      background-color: $theme-color;
+      right: 0;
+      @include transition(0.3s);
+      @include transform(translateX(50%));
+      @include border-radius(50%);
+      @media #{$device-481} {
+        display: none;
+      }
+    }
+  }
+  .happening-detail {
+    width: 45%;
+    float: right;
+    padding: 27px 30px 23px 30px;
+    position: relative;
+    background-color: $color-light;
+    @include border-radius(4px);
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+    @media #{$device-481} {
+      width: 100%;
+      float: none;
+      text-align: left;
+      margin-top: 30px;
+    }
+    .happening__title {
+      font-size: $display-24;
+      font-weight: $font-weight-semi-bold;
+      margin-bottom: 10px;
+      color: $theme-color;
+      @media #{$tab_device} {
+        line-height: 26px;
+      }
+      @media #{$large_mobile} {
+        line-height: 26px;
+      }
+      @media #{$small_mobile} {
+        line-height: 26px;
+      }
+    }
+    .happening__desc {
+      line-height: 26px;
+    }
+    &:before {
+      position: absolute;
+      top: 26px;
+      left: -12px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-right:12px solid $color-light;
+      @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+      @media #{$device-481} {
+        top: -18px;
+        left: 37px;
+        @include transform(rotate(90deg));
+      }
+    }
+  }
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  &:last-child {
+    .happening-detail {
+      @media #{$device-481} {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

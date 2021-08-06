@@ -1,0 +1,107 @@
+/*-============ TEAM AREA ========-*/
+.team-area {
+  .carousel-item-wrap {
+    .owl-stage-outer {
+      padding-bottom: 0;
+    }
+  }
+}
+
+/*-============ team-item ========-*/
+.team-item {
+  margin-bottom: 30px;
+  background-color: $color-light;
+  @include box-shadow(0 0 40px rgba(14,16,48,.02));
+  border: 1px solid rgba(127, 136, 151, 0.2);
+  position: relative;
+  z-index: 1;
+  @include transition(0.3s);
+  @include border-radius(30px);
+  padding: 40px 20px;
+  text-align: center;
+  .team-img-box {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    @include border-radius(50%);
+    margin: 0 auto;
+    @include box-shadow(0 0 40px rgba(14, 16, 48, 0.05));
+    border: 10px solid $color-light;
+    @media #{$laptop_m_four} {
+      width: 220px;
+      height: 220px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      @include border-radius(50%);
+    }
+  }
+  .team-titles {
+    position: relative;
+    z-index: 1;
+    padding-top: 25px;
+    .team__title {
+      font-size: $display-21;
+      text-transform: capitalize;
+      font-weight: $font-weight-bold;
+      display: inline-block;
+      margin-bottom: 3px;
+      a {
+        color: $theme-color;
+        @include transition(0.3s);
+        display: block;
+        position: relative;
+        &:hover {
+          color: $theme-color-2;
+        }
+      }
+    }
+    .team__meta {
+      margin-bottom: 3px;
+      font-weight: $font-weight-medium;
+    }
+    .social-profile {
+      position: relative;
+      margin-top: 25px;
+      padding-top: 30px;
+      &:before,
+      &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        @include border-radius(30px);
+        width: 100%;
+        height: 1px;
+        background-color: rgba(158, 166, 186, 0.2);
+      }
+      &:after {
+        background-color: $theme-color-2;
+        width: 0;
+        left: auto;
+        right: 0;
+        @include transition(0.3s);
+      }
+      li {
+        display: inline-block;
+        padding-right: 5px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  &:hover {
+    .team-titles {
+      .social-profile {
+        &:after {
+          width: 100%;
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+

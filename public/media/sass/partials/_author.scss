@@ -1,0 +1,42 @@
+/*====================================================
+    author-area
+ ====================================================*/
+.author-bio{
+  position: relative;
+  img {
+    width: 80px !important;
+    height: 80px;
+    @include border-radius(50%);
+    border: 5px solid $color-light;
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.2));
+    margin-right: 15px;
+  }
+  .author__title {
+    display: block;
+    text-transform: capitalize;
+    color: $theme-color;
+    font-weight: $font-weight-semi-bold;
+    font-size: $display-23;
+    padding-bottom: 8px;
+  }
+  .author__meta {
+    color: $theme-color-4;
+    li {
+      display: inline-block;
+      font-size: $default-font-4;
+      text-transform: capitalize;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

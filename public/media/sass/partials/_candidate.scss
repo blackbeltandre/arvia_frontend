@@ -1,0 +1,78 @@
+.candidate-item {
+  border: 1px solid rgba(128, 137, 150, 0.2);
+  @include border-radius(4px);
+  margin-bottom: 15px;
+  background-color: $color-light;
+  @include box-shadow(0 0 18px 0 rgba(0,0,0,0.05));
+  @media #{$laptop_m_four} {
+    display: block !important;
+  }
+  .bread-details {
+    @media #{$laptop_m_four} {
+      margin-bottom: 21px;
+    }
+    @media #{$large_mobile_three} {
+      display: block !important;
+    }
+    .bread-img {
+      @media #{$large_mobile_three} {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+
+.candidate-info {
+  @media #{$large_mobile} {
+    text-align: center;
+    display: block !important;
+  }
+  @media #{$small_mobile} {
+    text-align: center;
+    display: block !important;
+  }
+  .icon-element {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: $display-21;
+    margin-left: 0;
+    margin-right: 12px;
+    @media #{$large_mobile} {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 12px;
+    }
+    @media #{$small_mobile} {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 12px;
+    }
+  }
+  .info__title {
+    font-size: $default-font-2;
+  }
+  .info__desc {
+    font-size: $default-font-3;
+    margin-top: 2px;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.candidate-education {
+  .timeline-dashboard {
+    .mess__body {
+      max-height: inherit;
+      overflow-x: inherit;
+      overflow-y: inherit;
+      .mess__item {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

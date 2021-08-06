@@ -1,0 +1,117 @@
+/*============== loader-ripple ==============*/
+@keyframes loader {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes loader-dot {
+  80%, 100% { transform: rotate(360deg); }
+}
+
+@keyframes loader-dot-before {
+  50% {
+    transform: scale(0.4);
+  } 100%, 0% {
+      transform: scale(1.0);
+    }
+}
+
+/*============== play-button-pulse ==============*/
+@-webkit-keyframes play-button-pulse {
+  0% {
+    @include transform(scale(0.5));
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(1.2));
+    opacity: 0;
+  }
+}
+@-moz-keyframes play-button-pulse {
+  0% {
+    @include transform(scale(0.5));
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(1.2));
+    opacity: 0;
+  }
+}
+@-ms-keyframes play-button-pulse {
+  0% {
+    @include transform(scale(0.5));
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(1.2));
+    opacity: 0;
+  }
+}
+@-o-keyframes play-button-pulse {
+  0% {
+    @include transform(scale(0.5));
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(1.2));
+    opacity: 0;
+  }
+}
+@keyframes play-button-pulse {
+  0% {
+    @include transform(scale(0.5));
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(1.2));
+    opacity: 0;
+  }
+}
+
+/*== heartBeat ==*/
+@keyframes heartBeat {
+  0% {
+    @include transform(scale(1));
+  }
+  25% {
+    @include transform(scale(1.1));
+  }
+  40% {
+    @include transform(scale(1));
+  }
+  60% {
+    @include transform(scale(1.04));
+  }
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+@keyframes cluster-animation{
+  0%,100%{
+    @include box-shadow(0 0 0 4px rgba(0,0,0,0.1));
+  }
+  50%{
+    @include box-shadow(0 0 0 7px rgba(0,0,0,0.1));
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}

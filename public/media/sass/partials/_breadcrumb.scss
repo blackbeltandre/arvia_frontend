@@ -1,0 +1,318 @@
+/*====================================================
+    breadcrumb-area
+ ====================================================*/
+.breadcrumb-area {
+  padding-top: 185px;
+  padding-bottom: 130px;
+  position: relative;
+  z-index: 1;
+  background-image: url("../images/bread-bg.jpg");
+  @media #{$laptop_m_four} {
+    padding-top: 165px;
+  }
+  @media #{$large_mobile} {
+    padding-top: 140px;
+    padding-bottom: 110px;
+  }
+  @media #{$small_mobile} {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44,44,81,.95);
+    z-index: -1;
+  }
+  .watch-video-btn {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+}
+.about-breadcrumb {
+  padding-bottom: 160px;
+}
+.watch-video-btn {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  @include border-radius(50%);
+  background-color: $color-light;
+  @include box-shadow(0 10px 40px rgba(82, 85, 90, 0.05));
+  .icon-element {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    display: block;
+    @include border-radius(50%);
+    padding: 0;
+    font-size: $display-14;
+    color: $theme-color;
+    background-color: transparent;
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      top: -20px;
+      left: -20px;
+      bottom: -20px;
+      right: -20px;
+      background-color: rgba(255,255,255,0.2);
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-animation: play-button-pulse 1.8s linear infinite;
+      -moz-animation: play-button-pulse 1.8s linear infinite;
+      animation: play-button-pulse 1.8s linear infinite;
+      opacity: 0;
+      z-index: -1;
+    }
+    &:after {
+      -webkit-animation-delay: .6s;
+      -moz-animation-delay: .6s;
+      animation-delay: .6s;
+    }
+  }
+  &:hover {
+    .icon-element {
+      color: $theme-color-2;
+    }
+  }
+}
+
+.breadcrumb-content {
+  @media #{$large_mobile} {
+    display: block !important;
+    text-align: center;
+  }
+  @media #{$small_mobile} {
+    display: block !important;
+    text-align: center;
+  }
+  .section-heading {
+    .sec__title {
+      font-size: $display-12;
+      margin-bottom: 0;
+      color: $color-light;
+      @media #{$small_mobile} {
+        font-size: $primary-font;
+      }
+      @media #{$small_mobile_two} {
+        font-size: $display-17;
+        line-height: 42px;
+      }
+    }
+  }
+  .social-profile {
+    li {
+      a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: $color-light;
+        background-color: rgba(255, 255, 255, 0.1);
+        &:hover {
+          background-color: $color-light;
+          color: $theme-color-2;
+        }
+      }
+    }
+  }
+  .list-items {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px 4px 20px;
+    @include border-radius(30px);
+    font-family: $theme-font;
+    @media #{$large_mobile} {
+      display: inline-block !important;
+      margin-top: 30px;
+    }
+    @media #{$small_mobile} {
+      display: inline-block !important;
+      margin-top: 30px;
+    }
+    li {
+      display: inline-block;
+      font-size: $default-font-3;
+      position: relative;
+      padding-right: 22px;
+      color: $color-light;
+      font-weight: $font-weight-medium;
+      &:last-child {
+        padding-right: 0;
+      }
+      a {
+        @include transition(0.3s);
+        color: $color-light;
+        &:hover {
+          color: $theme-color-2;
+        }
+      }
+      &.active__list-item {
+        &:before {
+          position: absolute;
+          content: "\f105";
+          font-family: 'fontAwesome';
+          top: 2px;
+          right: 0;
+          padding: 0 7px;
+          font-size: $default-font-3;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  .contact-form-action {
+    form {
+      .form-control {
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include border-radius(30px);
+      }
+      .form-group {
+        .submit-btn {
+          @include border-radius(0 30px 30px 0);
+          color: $theme-color;
+          background-color: rgba(128, 137, 150, 0.2);
+          padding-right: 25px;
+          padding-left: 25px;
+          right: 0;
+          line-height: 64px;
+          &:hover {
+            background-color: $theme-color-2;
+            color: $color-light;
+          }
+        }
+      }
+    }
+  }
+  .bread-details {
+    @media #{$tab_device} {
+      margin-bottom: 30px;
+    }
+    @media #{$large_mobile} {
+      margin-bottom: 30px;
+    }
+    @media #{$large_mobile_three} {
+      display: block !important;
+    }
+    @media #{$small_mobile} {
+      margin-bottom: 30px;
+    }
+    .bread-img {
+      @media #{$large_mobile_three} {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.candidate-breadcrumb {
+  @media #{$tab_device} {
+    display: block !important;
+  }
+  @media #{$large_mobile} {
+    display: block !important;
+    text-align: left;
+  }
+  @media #{$small_mobile} {
+    display: block !important;
+    text-align: left;
+  }
+  .bread-details {
+    .bread-img {
+      @media #{$large_mobile} {
+       margin-right: 20px;
+        margin-bottom: 0;
+      }
+      @media #{$small_mobile} {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .bread-candidate-detail {
+    @media #{$small_mobile_five} {
+      display: block !important;
+    }
+    .bread-img {
+      @media #{$small_mobile_five} {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.job-single-breadcrumb {
+  .breadcrumb-content {
+    @media #{$large_mobile} {
+      text-align: left;
+    }
+    @media #{$small_mobile} {
+      text-align: left;
+    }
+  }
+  .bread-details {
+    @media #{$large_mobile} {
+      display: block !important;
+    }
+     @media #{$small_mobile} {
+      display: block !important;
+    }
+    .bread-img {
+      @media #{$large_mobile} {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      @media #{$small_mobile} {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.report-list-items {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  @media #{$laptop_m_four} {
+    position: inherit;
+    right: auto;
+    bottom: auto;
+    margin-top: 10px;
+  }
+  .theme-btn {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .listing-info {
+    li {
+      @media #{$small_mobile_four} {
+        margin-bottom: 0;
+      }
+      @media #{$small_mobile_two} {
+        margin-right: 0;
+        margin-top: 5px;
+      }
+      &:last-child {
+        @media #{$small_mobile_two} {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

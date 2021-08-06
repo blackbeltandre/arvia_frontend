@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documentation for Joby - Job Board HTML Template</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery.highlight.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,&display=swap" rel="stylesheet">
+
+    <link href="css/doc.css" rel="stylesheet">
+    <link href="css/scrollbar.css" rel="stylesheet">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+<!--Page Wrapper-->
+<div class="page-wrapper">
+    <div id="sidebar">
+        <!--Menu Box-->
+        <div class="menu-box">
+            <!--Logo-->
+            <div class="logo text-right">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <!--Sticky Menu-->
+            <nav class="sticky-menu">
+                <ul>
+                    <li class="current"><a href="#introduction">Overview</a></li>
+                    <li><a href="#gulp-installation">Gulp Installation</a></li>
+                    <li><a href="#ftp-install">Installation</a></li>
+                    <li><a href="#html-structure">HTML Structure</a></li>
+                    <li><a href="#css-structure">CSS and SCSS Files Structure</a></li>
+                    <li><a href="#logo-setting">Logo And Title setting</a></li>
+                    <li><a href="#javascript">Javascript</a></li>
+                    <li><a href="#tutorial">Tutorial</a></li>
+                    <li><a href="#sources-credits">Sources and Credits</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright">Copyright &copy; <a href="http://techydevs.com">TechyDevs</a> 2020</div>
+    </div><!-- end sidebar -->
+    <div id="content-section">
+        <!--Introduction Section-->
+        <section class="section introduction" id="introduction">
+
+            <div class="sec-content">
+                <h2>Joby</h2>
+                <h3>- Job Board HTML Template</h3>
+
+                <div class="separator"></div>
+
+                <strong class="text-color">Created:</strong> 22/02/2020<br>
+                <strong class="text-color">By:</strong> <a href="http://techydevs.com">TechyDevs</a><br>
+                <strong class="text-color">Email:</strong> <a href="mailto:contact@techydevs.com">contact@techydevs.com</a> <br>
+
+                <br>
+                <p>Thank you for purchasing <strong class="text-color">Joby</strong>
+                   - Job Board HTML Template
+                   If you have any questions that are beyond the
+                   scope of this help file, please feel free to email, via my user page contact
+                   form or put a ticket <br> at Support Center. Thank you so much!
+                </p>
+                <p>
+                    We continue to add new things to make our template more beautiful and strong every day.
+                    You will be free to use all our updates.
+                </p>
+                <h3 class="content-title">Template Features</h3>
+                <ul class="checkbox padding-top-10px">
+                    <li>3 Home Pages</li>
+                    <li>Clean & Modern Design</li>
+                    <li>Bootstrap 4 Framework </li>
+                    <li>Owl-carousel Slider</li>
+                    <li>SASS (SCSS)</li>
+                    <li>HTML Validate
+                        <a href="https://validator.w3.org/check?uri=referer">
+                            <img src="https://www.w3.org/Icons/valid-html401"
+                                 alt="Valid HTML" style="border:0;width:88px;height:31px" />
+                        </a>
+                    </li>
+                    <li>CSS3 Validate
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                 alt="Valid CSS!" />
+                        </a>
+                    </li>
+                    <li>BEM Structure (Block, Element, Methodology)</li>
+                    <li>Modular Structure</li>
+                    <li>Counter Js</li>
+                    <li>Drag & Drop Fileuploader</li>
+                    <li>Emoji-picker js</li>
+                    <li>Date range picker js</li>
+                    <li>Line-awesome icon</li>
+                    <li>FontAwesome icon</li>
+                    <li>Select2 js</li>
+                    <li>Nice Select js</li>
+                    <li>Smooth-scrolling js</li>
+                    <li>Isotope js</li>
+                    <li>Magnific-popup</li>
+                    <li>Fully Responsive Design </li>
+                    <li>All files are well commented </li>
+                    <li>Crossbrowser Compatible with IE10+, Firefox, Safari, Opera, Chrome </li>
+                    <li>Extensive Documentation</li>
+                    <li>And more.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section html-structure" id="gulp-installation">
+            <div class="sec-title">
+                <span class="icon fa fa-th-large"></span>
+                <h2>Gulp Start</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <h3>Follow the steps below:</h3>
+                <ol class="gulp-list">
+                    <li>Download the latest template source from ThemeForest.</li>
+                    <li>Extract Joby downloaded zip file. Extracted zip file will have 2 folders.</li>
+                    <li><strong>Joby</strong> =&gt; main source files</li>
+                    <li><strong>Documentation</strong> =&gt; guide lines</li>
+                    <li>We'll start of the process by installing Gulp onto your computer.
+                        Gulp requires you to have Node.js and Node Package Manager (NPM) installed on
+                        your system, so if you haven’t gotten them yet, <br>
+                        then go to <a href="https://nodejs.org/en/download/">Node.js’s</a>
+                        website and download the installer.
+                    </li>
+                    <li>
+                        Once you’re done installing Node.js and NPM, you can install
+                        Gulp by typing the following command in the command line:
+                    </li>
+                    <li>
+                        Start with command prompt if you use windows or start
+                        with terminal if you use mac:
+                    </li>
+                </ol>
+                <ol class="gulp-list-code">
+                    <li> sudo npm install gulp-cli -g</li>
+                    <li><strong># Note: Windows users do not require the `sudo` keyword</strong></li>
+                    <li> cd / your joby folder directory</li>
+                    <li>npm install gulp --save-dev</li>
+                    <li><strong># Note: don't use sudo keyword mac users and windows users now</strong></li>
+                    <li> Now your gulp will be installed after run this command  [npm install gulp --save-dev]</li>
+                    <li>Now go to your main file joby file. and You will also see a new folder > node_modules <br>
+                        that was created when you ran the npm install gulp --save-dev command.
+                    </li>
+                </ol>
+                <div class="sec-title margin-top-50px margin-bottom-30px">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Sass install</h2>
+                </div>
+                <ol class="gulp-list-code">
+                    <li>sudo npm install -g sass</li>
+                    <li><strong># Note: Windows users do not require the `sudo` keyword</strong></li>
+                    <li>
+
+                        // go to the project root in the terminal using the CD command. <br>
+                        // in the root of your project directory run the following commands. <br>
+                    </li>
+                    <li>
+                        A. To compile sass use the following command  [gulp style] <br>
+                        B. To watch for changes in SASS file and to compile automatically use the following <br>
+                        command  &gt; [gulp watch], and  to stop watching files, <br>
+                        use CTRL + C on Windows or Command + C on Mac OS
+                    </li>
+                </ol>
+                <ul class="gulp-list-link">
+                    <li>More clarification how to install sass and use go to
+                        <a href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html">
+                            sass's website
+                        </a>
+                    </li>
+                    <li>If you have any confusion then feel free to
+                        <a href="https://techydevs.com/support/">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section html-structure" id="ftp-install">
+            <div class="sec-title">
+                <span class="icon fa fa-th-large"></span>
+                <h2>Installation</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+                <h3>Follow the steps below to setup your site template:</h3>
+                <ol class="gulp-list">
+                    <li><h3>FTP Upload:</h3></li>
+                    <li>
+                        Unzip the downloaded package and open the Joby/main-file folder to find all
+                        the template files. You will need to upload these files to your hosting web server using
+                        FTP in order to use it on your own website.
+                    </li>
+                    <li>You need to upload all files inside the Joby/main-file folder to your website root.</li>
+                    <li><strong>Joby/css</strong> css files</li>
+                    <li><strong>Joby/fonts</strong> Icon, fonts files</li>
+                    <li><strong>Joby/images</strong> images files</li>
+                    <li><strong>Joby/js</strong> Javascript files</li>
+                    <li><strong>Joby/php</strong> php files</li>
+                    <li><strong>Joby/sass</strong> scss files</li>
+                    <li>You are now good... Start adding your content/images generate
+                        your beautiful brand new website for your awesome users.
+                    </li>
+                </ol>
+
+            </div>
+        </section><!-- end theme ftp -->
+
+        <!--HTML Structure-->
+        <section class="section html-structure" id="html-structure">
+            <div class="sec-title">
+                <span class="icon fa fa-th-large"></span>
+                <h2>HTML Structure</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+                <h3>The html template uses <strong>Bootstrap v4</strong> with valid HTML5 tags. This template is a responsive layout with 4 column Support column. All of the information in content area is nested within a class and comes with predefined classes.</h3>
+
+                <h3 class="content-title">HTML Structure</h3><!-- /.content-title -->
+                <p>Now, here's a look at a typical HTML file:</p>
+<pre class="prettyprint linenums margin-bottom-20px">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Your template title goes here&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav&gt;
+          ...
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+      ...
+    &lt;/footer&gt;
+
+    &lt;!-- javascript libraries --&gt;
+
+    &lt;script src="https://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                <p>To make this <strong class="text-color">a Bootstrapped template</strong>, just include the appropriate CSS and JS files:</p>
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Your template title goes here&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href="css/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav&gt;
+          ...
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+      ...
+    &lt;/footer&gt;
+
+    &lt;!-- javascript libraries --&gt;
+
+    &lt;script src="https://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                <p><strong class="text-color">And you're set!</strong> With those two files added, you can begin to develop any site or application with Bootstrap.</p>
+
+                <h3 class="content-title">Basic Grid HTML</h3>
+                <p>For a simple two column layout, create a .container and add the appropriate number of .col-lg* columns. </p>
+                <p>Given this example, we have .col-lg-4 and .col-lg-8, making for 12 total columns and a complete row.</p>
+                <pre class="code" data-language="html">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">...</div>
+        <div class="col-lg-8">...</div>
+    </div>
+</div>
+                </pre>
+                <h3 class="content-title">Nesting Columns</h3><!-- /.content-title -->
+                <p>To nest your content with the default grid, add a new .container and set of .col-lg* columns within an existing .col-lg* column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
+                <pre class="code" data-language="html">
+<div class="container">
+    <div class="col-lg-9">
+        Level 1 column
+        <div class="row">
+            <div class="col-lg-8">Level 2</div>
+            <div class="col-lg-4">Level 2</div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        Level 2 column
+    </div>
+</div>
+</pre><!-- /.code -->
+            </div>
+
+        </section>
+
+        <!--CSS Structure-->
+        <section class="section css-structure" id="css-structure">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>CSS and SCSS Files Structure</h2>
+            </div>
+
+            <br>
+            <div class="sec-content">
+                <h3>There are two main files are in this template. The first one <strong>bootstrap.min.css</strong>,
+                    second one is <strong>style.scss</strong> which for this template </h3>
+                <p>If you would like to edit a specific section of the site, then go to sass folder and open
+                    specific scss file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+                <p>These are the css files that are loaded into templates in top of document.</p>
+                <br />
+<pre class="code" data-language="css">
+ <!-- inject:css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.filer.css">
+    <link rel="stylesheet" href="css/jquery.filer-dragdropbox-theme.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/progresscircle.css">
+    <link rel="stylesheet" href="css/style.css">
+ <!-- end inject -->
+</pre><!-- /.code -->
+
+                <h3 class="content-title">Font</h3>
+                <p>Joby template used 1 font from
+                    <a href="https://fonts.google.com/">google fonts</a> library or
+                   you can change the font from google fonts library
+                </p>
+                <br />
+                <pre class="code" data-language="css">
+ <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,&display=swap" rel="stylesheet">
+                </pre><!-- /.code -->
+            </div>
+        </section>
+
+        <!--CSS Structure-->
+        <section class="section" id="logo-setting">
+            <div class="sec-title">
+                <span class="icon fa fa-at"></span>
+                <h2>Logo and Title setting</h2>
+            </div>
+
+            <br>
+            <div class="sec-content">
+                <h3>To change the logo, title, and favicon image of your site.
+                    you go to top of documentation
+                </h3>
+                <h3 class="content-title">Title Setting</h3>
+                <span></span><br>
+                <figure class="image-box"><img src="img/titleimg.jpg" alt=""></figure>
+                <h3 class="content-title content-title2">Favicon</h3>
+                <span></span><br>
+                <figure class="image-box"><img src="img/favimg.jpg" alt=""></figure>
+                <h3 class="content-title">Logo Img Setting</h3>
+                <span></span><br>
+                <figure class="image-box"><img src="img/logo-img.jpg" alt=""></figure>
+                <h3 class="content-title padding-bottom-10px">Google map Setting</h3>
+                <p>to change the map address go to gmap-script.js</p>
+                <span></span><br>
+                <figure class="image-box"><img src="img/map-img.jpg" alt=""></figure>
+                <figure class="image-box"><img src="img/map-img2.jpg" alt=""></figure>
+            </div>
+
+        </section>
+
+        <!--Javascript-->
+        <section class="section javascript" id="javascript">
+            <div class="sec-title">
+                <span class="icon fa fa-code"></span>
+                <h2>Jquery and javascript</h2>
+            </div>
+
+            <br>
+            <div class="sec-content">
+
+                <h3>This template imports three types of Javascript files.</h3>
+                <ul>
+                    <li>jQuery</li>
+                    <li>Custom scripts <strong class="text-color">(main.js)</strong></li>
+                    <li>Some plugins</li>
+                    <br>
+                    <li><strong class="text-color">jQuery</strong> is a Javascript library that greatly reduces the amount of code that you must write.</li>
+                    <li>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.</li>
+                </ul>
+                <br>
+                <p>In addition to the custom scripts, I have implemented few "tried and true" plugins to create the effects. This plugin is packed, so you won't need to manually edit anything in the file. The only necessary thing to know is how to call the method</p>
+                <br />
+                <br />
+                <p>These are the JS files that are loaded into templates in end of the Body Section.</p>
+                <br />
+                <pre class="code" data-language="html">
+ <!-- theme js files -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/isotope-3.0.6.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery-rating.js"></script>
+<script src="js/jquery.filer.min.js"></script>
+<script src="js/smooth-scrolling.js"></script>
+<script src="js/progresscircle.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries"></script>
+<script src="js/gmap-script.js"></script>
+<!-- Begin emoji-picker JavaScript -->
+<script src="js/config.js"></script>
+<script src="js/util.js"></script>
+<script src="js/jquery.emojiarea.js"></script>
+<script src="js/emoji-picker.js"></script>
+<script src="js/emoji-script.js"></script>
+<!-- End emoji-picker JavaScript -->
+<script src="js/main.js"></script>
+                </pre><!-- /.code -->
+
+            </div>
+
+        </section>
+
+        <!--Sources and Credits-->
+        <section class="section tutorial" id="tutorial">
+            <div class="sec-title">
+                <span class="icon fa fa-credit-card"></span>
+                <h2>Tutorial</h2>
+            </div>
+
+            <br>
+            <div class="sec-content">
+                <h3 class="content-title padding-bottom-20px">Nav Menu</h3><!-- /.content-title -->
+<pre class="code" data-language="html">
+ <header class="header-area">
+    <div class="header-menu-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-full-width">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+                        </div><!-- end logo -->
+                        <div class="main-menu-content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="index.html">Home 1</a></li>
+                                            <li><a href="index2.html">Home 2</a></li>
+                                            <li><a href="index3.html">Home 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><!-- end main-menu-content -->
+                    </div><!-- end menu-full-width -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end header-menu-wrapper -->
+</header>
+</pre><!-- /.code -->
+
+                <p>Add your own menu item to that ul li item. and if you want to add
+                   dropdown menu just make a nesting ul li with class of <b class="text-color">dropdown-menu-item</b>
+                </p>
+                <h3 class="content-title padding-bottom-20px">Footer Copyright</h3><!-- /.content-title -->
+<pre class="code" data-language="html">
+ <div class="row">
+     <div class="col-md-12">
+         <div class="copy-right">
+             <p class="copy__desc">
+                 Copyright &copy;2020 Joby Inc. Made with
+                 <span class="la la-heart-o"></span> by <a href="https://techydevs.com">TechyDevs.</a>
+             </p>
+             <ul class="condition-links">
+                 <li><a href="#">Terms & Conditions</a></li>
+                 <li><a href="#">Privacy Policy</a></li>
+                 <li><a href="#">Help Center</a></li>
+             </ul>
+         </div><!-- end copy-right -->
+     </div><!-- end col-md-12 -->
+ </div><!-- end row -->
+</pre><!-- /.code -->
+                <p>replace "&copy; copyright by Techydevs" with the copyright info.</p>
+            </div>
+
+        </section>
+
+        <!--Sources and Credits-->
+        <section class="section sources-credits" id="sources-credits">
+            <div class="sec-title">
+                <span class="icon fa fa-credit-card"></span>
+                <h2>Sources and Credits</h2>
+            </div>
+
+            <br>
+            <div class="sec-content">
+
+                <h3>We used 1 font from <a href="https://fonts.google.com/">google fonts</a> library
+                   you can change the font from
+                    google fonts library
+                </h3>
+
+                <p class="text-color"><strong> Fonts Used is:</strong></p>
+                <p>
+                    <a href="https://fonts.google.com/specimen/Noto+Sans+JP">Noto Sans JP</a>
+                </p>
+                <br>
+                <p class="text-color"><strong> Images used from:</strong></p>
+                <p>
+                    <a href="https://www.freepik.com/">Freepik</a>
+                </p>
+                <p>
+                    <a href="https://unsplash.com/">Unsplash</a>
+                </p>
+                <p>
+                    <a href="https://www.pexels.com/">Pexels</a>
+                </p>
+                <br>
+
+                <p class="text-color"><strong> SASS (SCSS) files:</strong></p>
+                <p><strong>_about.scss</strong>  (in sass Folder)</p>
+                <p><strong>_author.scss</strong>  (in sass Folder)</p>
+                <p><strong>_blockquote.scss</strong>  (in sass Folder)</p>
+                <p><strong>_blog.scss</strong>  (in sass Folder)</p>
+                <p><strong>_breadcrumb.scss</strong>  (in sass Folder)</p>
+                <p><strong>_button.scss</strong>  (in sass Folder)</p>
+                <p><strong>_call-to-action.scss</strong>  (in sass Folder)</p>
+                <p><strong>_candidate.scss</strong>  (in sass Folder)</p>
+                <p><strong>_cards.scss</strong>  (in sass Folder)</p>
+                <p><strong>_category.scss</strong>  (in sass Folder)</p>
+                <p><strong>_chart.scss</strong>  (in sass Folder)</p>
+                <p><strong>_clientlogo.scss</strong>  (in sass Folder)</p>
+                <p><strong>_comment.scss</strong>  (in sass Folder)</p>
+                <p><strong>_common.scss</strong>  (in sass Folder)</p>
+                <p><strong>_contact.scss</strong>  (in sass Folder)</p>
+                <p><strong>_counter.scss</strong>  (in sass Folder)</p>
+                <p><strong>_dashboard.scss</strong>  (in sass Folder)</p>
+                <p><strong>_employer.scss</strong>  (in sass Folder)</p>
+                <p><strong>_faq.scss</strong>  (in sass Folder)</p>
+                <p><strong>_filer-uploader.scss</strong>  (in sass Folder)</p>
+                <p><strong>_footer.scss</strong>  (in sass Folder)</p>
+                <p><strong>_general.scss</strong>  (in sass Folder)</p>
+                <p><strong>_google-map.scss</strong>  (in sass Folder)</p>
+                <p><strong>_hero.scss</strong>  (in sass Folder)</p>
+                <p><strong>_how-it-work.scss</strong>  (in sass Folder)</p>
+                <p><strong>_icon-box.scss</strong>  (in sass Folder)</p>
+                <p><strong>_icons.scss</strong>  (in sass Folder)</p>
+                <p><strong>_keyframes.scss</strong>  (in sass Folder)</p>
+                <p><strong>_menu.scss</strong>  (in sass Folder)</p>
+                <p><strong>_mixins.scss</strong>  (in sass Folder)</p>
+                <p><strong>_modal.scss</strong>  (in sass Folder)</p>
+                <p><strong>_particles.scss</strong>  (in sass Folder)</p>
+                <p><strong>_pricing.scss</strong>  (in sass Folder)</p>
+                <p><strong>_progress-bar.scss</strong>  (in sass Folder)</p>
+                <p><strong>_rating.scss</strong>  (in sass Folder)</p>
+                <p><strong>_sidebar.scss</strong>  (in sass Folder)</p>
+                <p><strong>_tab.scss</strong>  (in sass Folder)</p>
+                <p><strong>_tags.scss</strong>  (in sass Folder)</p>
+                <p><strong>_team-member.scss</strong>  (in sass Folder)</p>
+                <p><strong>_testimonial.scss</strong>  (in sass Folder)</p>
+                <p><strong>_timeline.scss</strong>  (in sass Folder)</p>
+                <p><strong>_variables.scss</strong>  (in sass Folder)</p>
+                <p><strong>style.scss</strong>  (in sass Folder)</p>
+                <br>
+                <p class="text-color"><strong> Slider Used is:</strong></p>
+                <p><a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html" target="_blank">Owl Carousel</a></p>
+                <br>
+                <p class="text-color"><strong> Plugins Used Are:</strong></p>
+                <p><a href="https://code.jquery.com/jquery/" target="_blank">jquery-3.4.1.min.js</a> (can be located in js folder)</p>
+                <p><a href="https://popper.js.org/" target="_blank">popper.js</a> (can be located in js folder)</p>
+                <p><a href="https://getbootstrap.com/docs/3.3/" target="_blank">bootstrap.min.js</a> (can be located in js folder)</p>
+                <p><a href="https://dimsemenov.com/plugins/magnific-popup/" target="_blank">magnific-popup.js</a> (can be
+                                                                                                       located in js folder)</p>
+                <p><a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html" target="_blank">Owl Carousel</a> (can be located in js folder)</p>
+                <p><a href="https://github.com/bfintal/Counter-Up" target="_blank">counter-up.js</a> (can be located in js folder)</p>
+                <p><a href="https://codepen.io/bassta/pen/LovFG" target="_blank">smooth-scrolling.js</a> (can be located in js folder)</p>
+                <p><a href="https://fontawesome.com/" target="_blank">FontAwesome Icons</a> (can be located in js folder)</p>
+                <p><a href="https://icons8.com/line-awesome">LineAwesome</a> (can be located in js folder)</p>
+                <p><a href="https://hernansartorio.com/jquery-nice-select/">Nice Select</a> (can be located in js folder)</p>
+                <p><a href="https://github.com/OneSignal/emoji-picker">Emoji picker</a> (can be located in js folder)</p>
+                <p><a href="https://select2.org/">Select2</a> (can be located in js folder)</p>
+                <p><a href="http://www.daterangepicker.com/">Date range picker</a> (can be located in js folder)</p>
+
+                Every Code is properly commented for Editing Ease.
+            </div>
+
+        </section>
+
+        <!--Support-->
+        <section class="section support" id="support">
+            <div class="sec-title">
+                <span class="icon fa fa-support"></span>
+                <h2>Support</h2>
+            </div>
+            <br>
+            <div class="sec-content">
+
+                <h3>Once again, thank you so much for purchasing this template. As I said at the beginning, we'd be glad
+                    to help you if you have any questions relating to this template. No guarantees, but I'll do my best
+                    to assist. If you have any queries, please feel free to contact us at Support Center.</h3>
+
+                <p>Email Us at: <a href="mailto:contact@techydevs.com">contact@techydevs.com</a></p>
+            </div>
+        </section>
+    </div>
+</div>
+<!--End pagewrapper-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/jquery.highlight.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

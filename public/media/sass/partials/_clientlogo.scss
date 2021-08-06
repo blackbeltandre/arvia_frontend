@@ -1,0 +1,14 @@
+.client-logo-wrap.d-flex {
+  @media #{$small_mobile} {
+    display: block !important;
+  }
+}
+
+.client-logo-item {
+  padding: 10px 30px;
+  margin: 10px;
+  @include border-radius(50px);
+  border: 1px solid rgba(128, 137, 150, 0.1);
+  background-color: $color-light;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.07))
+}

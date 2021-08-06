@@ -1,0 +1,99 @@
+.comment {
+  display: flex;
+  margin-bottom: 30px;
+  @media #{$large_mobile} {
+    display: block;
+    text-align: center;
+  }
+  @media #{$small_mobile} {
+    display: block;
+    text-align: center;
+  }
+  .avatar__img {
+    width: 80px;
+    height: 80px;
+    @include border-radius(50%);
+    border: 4px solid $color-light;
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  }
+  .comment-body {
+    margin-left: 16px;
+    @media #{$large_mobile} {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    @media #{$small_mobile} {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    .meta-data {
+      position: relative;
+    }
+    .comment__author {
+      font-weight: $font-weight-semi-bold;
+      color: $theme-color;
+      text-transform: capitalize;
+      font-size: $default-font;
+    }
+    .comment__date {
+      font-size: $default-font-3;
+      margin-left: 5px;
+      font-weight: $font-weight-medium;
+    }
+    .rating-rating {
+      position: absolute;
+      top: 3px;
+      right: 0;
+      @media #{$large_mobile} {
+        position: inherit;
+        justify-content: center;
+        top: auto;
+        right: auto;
+      }
+      @media #{$small_mobile} {
+        position: inherit;
+        justify-content: center;
+        top: auto;
+        right: auto;
+      }
+    }
+    .comment-content {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    .comment-reply {
+      @media #{$large_mobile} {
+        display: block !important;
+      }
+      @media #{$small_mobile} {
+        display: block !important;
+      }
+      .comment__btn {
+        color: $theme-color-2;
+        line-height: 35px;
+        @include border-radius(30px);
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: transparent;
+        @include box-shadow(0 0 0 0);
+        &:hover {
+          background-color: $theme-color-2;
+          color: $color-light;
+          border-color: $theme-color-2;
+        }
+      }
+    }
+  }
+}
+.comments-reply {
+  margin-left: 95px;
+  @media #{$laptop_m_four} {
+    margin-left: 40px;
+  }
+  @media #{$large_mobile} {
+    margin-left: 0;
+  }
+  @media #{$small_mobile} {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,25 @@
+/*====================================================
+    about-area
+ ====================================================*/
+.about-content {
+  @media #{$tab_device} {
+    margin-bottom: 50px;
+  }
+  @media #{$large_mobile} {
+    margin-bottom: 50px;
+  }
+  @media #{$small_mobile} {
+    margin-bottom: 50px;
+  }
+  .img-boxes{
+    @media #{$tab_device} {
+      margin-bottom: 30px;
+    }
+    @media #{$large_mobile} {
+      margin-bottom: 30px;
+    }
+    @media #{$small_mobile} {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+/*===== cat-area =====*/
+.cat-area {
+  .btn-box.text-right {
+    @media #{$tab_device} {
+      text-align: left !important;
+    }
+    @media #{$large_mobile} {
+      text-align: left !important;
+    }
+    @media #{$small_mobile} {
+      text-align: left !important;
+    }
+  }
+
+  .btn-box.margin-top-60px {
+    @media #{$tab_device} {
+      margin-top: 30px;
+    }
+    @media #{$large_mobile} {
+      margin-top: 30px;
+    }
+    @media #{$small_mobile} {
+      margin-top: 30px;
+    }
+  }
+
+}
+
+
+/*===== category-item =====*/
+.category-item {
+  @include border-radius(8px);
+  @include transition(0.3s);
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid rgba(128, 137, 150, 0.2);
+  z-index: 1;
+  a {
+    color: $theme-color;
+    @include transition(0.3s);
+  }
+  .cat-svg {
+    fill: $theme-color;
+    width: 50px;
+    @include transition(0.3s);
+  }
+  .icon-element {
+    background-color: rgba(38, 174, 97, 0.1);
+    color: $theme-color-2;
+  }
+  .cat__title {
+    font-size: $default-font;
+    font-weight: $font-weight-medium;
+    @include transition(0.3s);
+  }
+  span {
+    @include transition(0.3s);
+    color: $theme-color-4;
+    text-transform: capitalize;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23ffffff' fill-opacity='0.36' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+  &:hover {
+    background-color: $theme-color-2;
+    border-color: $theme-color-2;
+    &:after {
+      opacity: 0.1;
+      visibility: visible;
+    }
+    .icon-element {
+      background-color: $color-light;
+      color: $theme-color-2;
+    }
+    .cat-svg {
+      fill: $color-light;
+    }
+    .cat__title,
+    span {
+      color: $color-light;
+    }
+  }
+}
+
+/*===== category-item-layout =====*/
+.category-item-layout {
+  border: none;
+  z-index: 1;
+  .cat-fig-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: $color-light;
+    @include transform(translateY(-50%));
+    span {
+      background-color: rgba(255, 255, 255, 0.2);
+      @include border-radius(30px);
+      padding: 3px 12px;
+      @include transition(0.3s);
+      color: $color-light;
+    }
+  }
+  .icon-element {
+    background-color: $color-light;
+  }
+  &:after {
+    background-color: $theme-color;
+    opacity: 0.8;
+    visibility: visible;
+    @include border-radius(4px);
+    background-image: none;
+    z-index: 1;
+    @include transition(0.3s);
+  }
+  &:hover {
+    .cat-fig-box {
+      span {
+        background-color: $color-light;
+        color: $theme-color-2;
+      }
+    }
+   &:after {
+     opacity: 0.9;
+   }
+  }
+}
+/*===== location-item-layout =====*/
+.location-item-layout {
+  overflow: hidden;
+  .cat-fig-box {
+    top: 0;
+    height: 100%;
+    @include transform(translateY(0));
+  }
+  .cat-img {
+    .img-fluid {
+      @include transition(0.4s);
+      @include border-radius(8px);
+    }
+  }
+  .cat-content {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .cat__title {
+    font-size: $display-24;
+    font-weight: $font-weight-semi-bold;
+  }
+  &:after {
+    opacity: 1;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(50%,transparent),to(rgba(0,0,0,.99)));
+    background: -webkit-linear-gradient(top,transparent 50%,rgba(0,0,0,.99) 100%);
+    background: -o-linear-gradient(top,transparent 50%,rgba(0,0,0,.99) 100%);
+    background: linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.99) 100%);
+  }
+  &:hover {
+    .cat-img {
+      .img-fluid {
+        @include transform(scale(1.1) rotate(3deg));
+      }
+    }
+  }
+}
